@@ -72,6 +72,8 @@ main p {
   position: relative;
 
   font-family: var(--ff-heading);
+
+  width: 32rem;
 }
 
 .card img {
