@@ -49,3 +49,51 @@ header h1 {
 
   border-bottom: 3rem;
 }
+
+main {
+  display: grid;
+  align-items: center;
+  text-align: center;
+
+  gap: 3.6rem;
+
+  margin: 1.4rem 3.2rem 6rem;
+}
+
+main p {
+  color: #23053a;
+
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.card {
+  position: relative;
+
+  font-family: var(--ff-heading);
+}
+
+.card img {
+  width: 32rem;
+  object-fit: cover;
+
+  border-radius: 2rem;
+}
+
+.card h2 {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+  background-color: var(--bg-light-pink);
+  color: var(--bg-dark-blue);
+
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 0.5rem 2.4rem;
+
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
