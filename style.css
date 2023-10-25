@@ -68,16 +68,22 @@ main p {
   line-height: 2.5rem;
 }
 
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.6rem;
+}
+
 .card {
   position: relative;
 
   font-family: var(--ff-heading);
-
-  width: 32rem;
 }
 
 .card img {
-  width: 32rem;
+  width: 100%;
+
   object-fit: cover;
 
   border-radius: 2rem;
@@ -125,5 +131,18 @@ main p {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 500px) {
+  .card {
+    width: 30rem;
+  }
+
+  .cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
